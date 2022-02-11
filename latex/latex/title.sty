@@ -1,0 +1,32 @@
+\def\author#1{\def\auth@r{#1}}
+\def\title#1{\def\ti@tle{#1}}
+\def\school#1{\def\sch@ol{#1}}
+\def\graduationdate#1{\def\gr@duationdate{#1}}
+
+
+
+
+%  TITLEPAGE
+%
+\def\titlepages{\setcounter{page}{1}
+   \thispagestyle{empty}
+   \vspace*{-0in}
+     \begin{center}
+     {\large POLITECHNIKA ŒL¥SKA W GLIWICACH\\
+     WYDZIA£ IN¯YNIERII BIOMEDYCZNEJ}
+     %INFORMATYKA i APARATURA MEDYCZNA}
+     \end{center}
+       %\vspace*{120pt}
+	\vspace*{3cm}
+       \centerline{\large Sprawozdanie}
+        %\vspace*{15pt}
+	\vspace{2cm}
+    \begin{center} \bf\Large\ti@tle \end{center}
+    %\vspace*{5pt}
+	\vspace*{1.5cm}
+    \centerline{\bf\large\auth@r}
+\vfill
+    \centerline{\large\gr@duationdate} 
+    \newpage\thispagestyle{empty}\baselineskip=\normalbaselineskip
+%
+}
