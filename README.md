@@ -11,10 +11,10 @@ Workplan:
       - ekspert's masks prepare,
       - data augumentation,
       - neural network learning,
-      - neural network's parameter adjustment,
+      - neural network's parameters adjustment,
       - evaluation.
 4. Acquisition protocol.
-5. Measurement method of segmented carotid images.
+5. Diameter measurement method of segmented image of carotid.
 
 
 Current progress in the folders below (11.02.2022):
