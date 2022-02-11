@@ -1,0 +1,253 @@
+% nie ruszaæ
+\RequirePackage{ifpdf}
+\newif\ifelektroniczna
+\newif\ifjednostronna
+\newif\ifprojektInzynierski
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% USTAWIENIA GLOBALNE I domyœlna œcie¿ka do plików z obrazkami, kodowanie itp. 
+% okreœlone s¹ w drugiej sekcji ustawieñ
+
+% czy projekt czy praca magisterska
+%\projektInzynierskitrue % projekt
+\projektInzynierskifalse % praca magisterska
+
+% czy wersja elektroniczna (pdf z kolorowymi linkami) czy nie (np. do druku)
+\elektronicznatrue
+%\elektronicznafalse
+
+% czy jednostronna (recenzent), czy dwustronna (do akt);
+% UWAGA: to nie jest dyrektywa dla drukarki; nie zmienia sposobu wydruku, 
+% tylko to, w jaki sposób rozpoczynane s¹ rozdzia³y, ustawiane marginesy
+% itp.
+
+\jednostronnafalse
+%\jednostronnatrue
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% nie ruszaæ
+\ifjednostronna
+    \def\strony{oneside,openany}
+\else
+    \def\strony{twoside,openright}
+\fi
+
+\ifpdf
+    % uwaga, ustawiaj¹c coœ innego ni¿ 12 sprawdŸ uk³ad strony tytu³owej (marginesy)
+    \documentclass[pdftex,12pt,a4paper,\strony,colorlinks,nocenter,noupper,crosshair]{thesis}
+    \usepackage[pdftex]{graphicx}
+    \pdfcompresslevel=1
+\else    
+    \documentclass[12pt,a4paper,\strony,nocenter,noupper,crosshair]{thesis}
+    \usepackage{graphicx}
+\fi
+
+% nie ruszaæ
+\usepackage{url}
+\usepackage{stronatytulowa}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% USTAWIENIA GLOBALNE - czêœæ 2
+%
+
+% kodowanie dokumentu
+%\usepackage[utf8]{inputenc}   % linuks/windows/mac; pozwala na ³atwe mieszanie znaków z ró¿nych jêzyków
+\usepackage[cp1250]{inputenc} % windows
+
+% dane 
+\ifprojektInzynierski
+    \def\rodzaj{Projekt in¿ynierski}
+\else
+    \def\rodzaj{Praca dyplomowa magisterska}
+\fi
+%\def\rodzaj{Praca przejœciowa}
+
+% stan na 2011-2012
+\ifprojektInzynierski
+    \def\wydzial{Automatyki Elektroniki i~Informatyki}
+\else
+    \def\wydzial{In¿ynierii Biomedycznej}
+\fi
+
+\def\tytul{Szacowanie wielkoœci naczynia w badaniach USG} % Proszê u¿yæ i ma³ych, i du¿ych liter!
+\def\autor{Autor: in¿. Agata Momot} %Jan Kowalski a NIE JAN KOWALSKI
+
+% tytu³ i autor dla pdfa - najczêœciej jw, ale bez podzia³u na liniie i BEZ POLSKICH LITER
+\def\tytulpdf{TYTUL DLA PDFa}
+\def\autorpdf{AUTOR DLA PDFa}
+
+% promotor
+\def\promotor{Kieruj¹cy prac¹: dr Jan Juszczyk} % prof. nzw. dr hab. in¿. dr n.med doc. Jan Kowalski
+
+% z konsultantem/bez konsultanta
+%\def\konsultant{Konsultant: Konsultant} prof. nzw. dr hab. in¿. dr n.med doc. Jan Nowak
+\def\konsultant{}
+
+\def\data{Gliwice, MIESI¥C, ROK} % uwaga na wielkoœæ liter: grudzieñ 2012/czerwiec 2012/..
+
+% do pdfa
+\def\slowakluczowe{SLOWA,KLUCZOWE}
+
+% œcie¿ka do obrazków
+\graphicspath{{./rysunki/}}
+
+% ustawienia dla pdfa
+\ifpdf
+\ifelektroniczna
+     \usepackage[pdfusetitle=true,
+	  pdfsubject={\tytulpdf},
+	        pdfkeywords={\slowakluczowe}, 
+		pdfcreator={\autorpdf},
+		pdfstartview=FitV,
+		linkcolor=blue,
+		citecolor=red,
+		]{hyperref}
+\fi                 
+\fi
+
+
+\usepackage{layout}% poka¿ marginesy
+
+% Nazwa za³¹czników 
+\def\appendixname{Za³¹cznik}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% nie ruszaæ (choæ chwilowo niepotrzebne)
+%	\author{\autor}
+%	\title{\tytul}
+%	\date{\data}
+%
+
+% === PAKIETY ===
+
+% ³adne czcionki dla PDF + ustawienia spolszczaj¹ce
+\usepackage{t1enc,amsmath}
+\usepackage[OT4,plmath]{polski}
+
+% potrzebne dla strony tytu³owej:
+\usepackage{helvet} 
+
+% pierwszy paragraf w rozdziale/sekcji powinien byæ wciêty
+\usepackage{indentfirst}
+
+% marginesy
+%\usepackage{anysize}
+%\marginsize{3cm}{2.5cm}{2.5cm}{2.5cm}%LPGD
+%\setlength{\textheight}{24cm}
+% za spraw¹ thesis
+%\textwidth 150mm
+%\textheight 225mm
+
+% czcionki matematyczne
+\usepackage{amsfonts}
+
+% rysunki z³o¿one z wielu [pod]rysunków
+\usepackage{subfig}
+\captionsetup[subfigure]{justification=centerfirst}
+
+% mo¿liwoœæ sklejania wierszy tabeli
+\usepackage{multirow}
+
+% mo¿liwoœæ wklejania adresów - jest ju¿ w³¹czony wy¿ej
+%\usepackage{url}
+
+% ulepszona obs³uga cytowañ
+\usepackage{cite}
+
+% listingi
+\usepackage{listings}
+% domyœlne ustawienia (niestety utf8 nie jest akceptowany)
+%\lstset{language={Matlab},inputencoding=cp1250}}
+%\lstset{language={Matlab},inputencoding=latin2}}
+\lstset{language={Java},inputencoding=latin2} % powinno pasowaæ te¿ do C#
+
+% \addcontentsline nie dzia³a za dobrze w po³¹czeniu z hyperref, ale to nie dzia³a z klas¹ thesis
+%\usepackage[nottoc]{tocbibind}
+
+% strona po cleardoublepage powinna byæ pusta, nie z nag³ówkami
+\usepackage{cleardpempty}
+
+% == opcjonalne
+
+% wymuœ po³o¿enie grafiki (itp.) przez [H]
+\usepackage{float} 
+
+% znak promila i inne znaki specjalne
+%\usepackage{textcomp}
+
+% jeœli trzeba obróciæ stronê (wstawiæ coœ w orientacji poziomej), u¿yj tych pakietów
+%\ifpdf\usepackage{pdflscape}\else\usepackage{lscape}\fi
+
+% jeœli potrzebujesz d³ugich tabeli (wiele stron)
+%\usepackage{longtable}
+
+% === POLECENIA DODATKOWE ===
+
+% wektor w tekœcie
+\def\vec#1{\ensuremath{\mathbf{#1}}}
+
+% anglicyzmy i ³acinizmy
+\def\ang#1{ang.~\emph{#1}}
+\def\lat#1{³ac.~\emph{#1}}
+
+% proste e (jako podstawa logarytmu naturalnego) we wzorach i w tekœcie:
+\def\e{\ensuremath{\textrm{\normalfont{}e}}}
+
+% znak stopnia [jak w "5 stopni"]
+\def\stopien{\ensuremath{^{\circ}}\protect\space}
+
+% notatki na marginesie
+\def\fixme#1{\marginpar{\tiny{}#1}}
+%\def\fixme#1{} % gdy nie chcemy ich drukowaæ, wystarczy zast¹piæ powy¿sze tym
+
+%ODNOSNIKI 
+% ¿eby wykorzystaæ przypis dwukrotnie; druga wersja gorzej dzia³a³a w po³¹czeniu 
+% z hyperref; czyli \footnote{blablabla \label{przypisX}} + \footnotereuse{przypisX}
+%\newcommand{\footnreuse}[1]{\raisebox{1ex}{\scriptsize{}\protect\ref{#1}}}
+
+% == ŒRODOWISKA DLA TWIERDZEÑ, LEMATÓW itp. ===
+\newtheorem{twierdzenie}{Twierdzenie}[chapter]
+\newtheorem{wlasnosc}{W³asnoœæ}[chapter]
+\newtheorem{lemat}{Lemat}[chapter]
+\newenvironment{dowod}{\parindent=0pt{\bf Dowód. }}{\begin{flushright}$\square$\end{flushright}}
+
+% === RACZEJ NIE RUSZAÆ ===
+
+%\usepackage{makeidx}
+%\makeindex
+%\usepackage{threeparttable}
+%\usepackage[small,center]{caption2}
+
+\def\captionlabeldelim{.}
+
+%\usepackage{geometry}
+%GATHER{thesis.bib}
+%\usepackage[twoside]{geometry}
+%\geometry{ lmargin=3.5cm, rmargin=2.5cm, tmargin=3cm, bmargin=3cm,
+%headheight=1cm, headsep=0.5cm, footskip=0pt }
+
+\linespread{1}
+\chapterfont{\Huge\bfseries}
+\sectionfont{\bfseries\Large}
+\subsectionfont{\bfseries\large}
+\institutionfont{\bfseries}%\mdseries}
+\def\captionlabelfont{\bfseries}
+
+\renewcommand{\figureshortname}{Rys.}
+\renewcommand{\tableshortname}{Tab.}
+
+\renewcommand\floatpagefraction{.9}
+\renewcommand\topfraction{.9}
+\renewcommand\bottomfraction{.9}
+\renewcommand\textfraction{.1}
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
+
+\newcommand{\topcaption}{%                  % robi podpis nad tabelk¹ z odstêpem po podpisie
+   \setlength{\abovecaptionskip}{0pt}%
+   \setlength{\belowcaptionskip}{10pt}%
+   \caption}
+

@@ -1,0 +1,419 @@
+
+@incollection{abdel-dayemCarotidArteryUltrasound2005,
+  title = {Carotid {{Artery Ultrasound Image Segmentation Using Fuzzy Region Growing}}},
+  booktitle = {Image {{Analysis}} and {{Recognition}}},
+  author = {{Abdel-Dayem}, Amr R. and {El-Sakka}, Mahmoud R.},
+  editor = {Hutchison, David and Kanade, Takeo and Kittler, Josef and Kleinberg, Jon M. and Mattern, Friedemann and Mitchell, John C. and Naor, Moni and Nierstrasz, Oscar and Pandu Rangan, C. and Steffen, Bernhard and Sudan, Madhu and Terzopoulos, Demetri and Tygar, Dough and Vardi, Moshe Y. and Weikum, Gerhard and Kamel, Mohamed and Campilho, Aur{\'e}lio},
+  year = {2005},
+  volume = {3656},
+  pages = {869--878},
+  publisher = {{Springer Berlin Heidelberg}},
+  address = {{Berlin, Heidelberg}},
+  doi = {10.1007/11559573_106},
+  isbn = {978-3-540-29069-8 978-3-540-31938-2},
+  langid = {english}
+}
+
+@article{amishaOverviewArtificialIntelligence2019,
+  title = {Overview of Artificial Intelligence in Medicine},
+  author = {{Amisha} and Malik, Paras and Pathania, Monika and Rathaur, VyasKumar},
+  year = {2019},
+  journal = {Journal of Family Medicine and Primary Care},
+  volume = {8},
+  number = {7},
+  pages = {2328},
+  issn = {2249-4863},
+  doi = {10.4103/jfmpc.jfmpc_440_19},
+  langid = {english}
+}
+
+@article{cardinalIntravascularUltrasoundImage2006a,
+  title = {Intravascular Ultrasound Image Segmentation: A Three-Dimensional Fast-Marching Method Based on Gray Level Distributions},
+  shorttitle = {Intravascular Ultrasound Image Segmentation},
+  author = {Cardinal, M.-H.R. and Meunier, J. and Soulez, G. and Maurice, R.L. and Therasse, E. and Cloutier, G.},
+  year = {2006},
+  month = may,
+  journal = {IEEE Transactions on Medical Imaging},
+  volume = {25},
+  number = {5},
+  pages = {590--601},
+  issn = {0278-0062},
+  doi = {10.1109/TMI.2006.872142},
+  langid = {english}
+}
+
+@article{chengCarotidPlaqueSegmentation2018a,
+  title = {Carotid Plaque Segmentation from Three-Dimensional Ultrasound Images by Direct Three-Dimensional Sparse Field Level-Set Optimization},
+  author = {Cheng, Jieyu and Chen, Yimin and Yu, Yanyan and Chiu, Bernard},
+  year = {2018},
+  month = mar,
+  journal = {Computers in Biology and Medicine},
+  volume = {94},
+  pages = {27--40},
+  issn = {00104825},
+  doi = {10.1016/j.compbiomed.2018.01.002},
+  langid = {english}
+}
+
+@article{chenMachineLearningPrediction2017,
+  title = {Machine {{Learning}} and {{Prediction}} in {{Medicine}} \textemdash{} {{Beyond}} the {{Peak}} of {{Inflated Expectations}}},
+  author = {Chen, Jonathan H. and Asch, Steven M.},
+  year = {2017},
+  month = jun,
+  journal = {New England Journal of Medicine},
+  volume = {376},
+  number = {26},
+  pages = {2507--2509},
+  issn = {0028-4793, 1533-4406},
+  doi = {10.1056/NEJMp1702071},
+  langid = {english}
+}
+
+@article{cheUltrasoundRegistrationReview2017a,
+  title = {Ultrasound Registration: {{A}} Review},
+  shorttitle = {Ultrasound Registration},
+  author = {Che, Chengqian and Mathai, Tejas Sudharshan and Galeotti, John},
+  year = {2017},
+  month = feb,
+  journal = {Methods},
+  volume = {115},
+  pages = {128--143},
+  issn = {10462023},
+  doi = {10.1016/j.ymeth.2016.12.006},
+  langid = {english}
+}
+
+@book{doughertyDigitalImageProcessing2020,
+  title = {Digital {{Image Processing Methods}}},
+  author = {Dougherty, Edward R.},
+  year = {2020},
+  month = aug,
+  publisher = {{CRC Press}},
+  googlebooks = {84T3DwAAQBAJ},
+  isbn = {978-1-00-010565-0},
+  langid = {english},
+  keywords = {Computers / Image Processing,Computers / Social Aspects,Technology \& Engineering / Electrical,Young Adult Nonfiction / Technology / Electricity \& Electronics}
+}
+
+@article{el-gamalCurrentTrendsMedical2016,
+  title = {Current Trends in Medical Image Registration and Fusion},
+  author = {{El-Gamal}, Fatma El-Zahraa Ahmed and Elmogy, Mohammed and Atwan, Ahmed},
+  year = {2016},
+  month = mar,
+  journal = {Egyptian Informatics Journal},
+  volume = {17},
+  number = {1},
+  pages = {99--124},
+  issn = {11108665},
+  doi = {10.1016/j.eij.2015.09.002},
+  langid = {english}
+}
+
+@article{golematiUsingHoughTransform2007,
+  title = {Using the {{Hough Transform}} to {{Segment Ultrasound Images}} of {{Longitudinal}} and {{Transverse Sections}} of the {{Carotid Artery}}},
+  author = {Golemati, Spyretta and Stoitsis, John and Sifakis, Emmanouil G. and Balkizas, Thomas and Nikita, Konstantina S.},
+  year = {2007},
+  month = dec,
+  journal = {Ultrasound in Medicine \& Biology},
+  volume = {33},
+  number = {12},
+  pages = {1918--1932},
+  issn = {03015629},
+  doi = {10.1016/j.ultrasmedbio.2007.05.021},
+  langid = {english}
+}
+
+@article{grovesAutomaticSegmentationCarotid2020b,
+  title = {Automatic Segmentation of the Carotid Artery and Internal Jugular Vein from {{2D}} Ultrasound Images for {{3D}} Vascular Reconstruction},
+  author = {Groves, Leah A. and VanBerlo, Blake and Veinberg, Natan and Alboog, Abdulrahman and Peters, Terry M. and Chen, Elvis C. S.},
+  year = {2020},
+  month = nov,
+  journal = {International Journal of Computer Assisted Radiology and Surgery},
+  volume = {15},
+  number = {11},
+  pages = {1835--1846},
+  issn = {1861-6410, 1861-6429},
+  doi = {10.1007/s11548-020-02248-2},
+  langid = {english}
+}
+
+@article{hassaninAutomaticLocalizationCommon2021,
+  title = {Automatic Localization of {{Common Carotid Artery}} in Ultrasound Images Using {{Deep Learning}}},
+  author = {Hassanin, Dina and Abdellah, mahmoud and Khalaf, Ashraf and Gharrieb, Redial Ragib},
+  year = {2021},
+  month = jul,
+  journal = {Journal of Advanced Engineering Trends},
+  volume = {40},
+  number = {2},
+  pages = {127--135},
+  issn = {2682-2091},
+  doi = {10.21608/jaet.2020.41138.1040},
+  langid = {english}
+}
+
+@article{hassanRobustSpatialFuzzy2019a,
+  title = {Robust Spatial Fuzzy {{GMM}} Based {{MRI}} Segmentation and Carotid Artery Plaque Detection in Ultrasound Images},
+  author = {Hassan, Mehdi and Murtza, Iqbal and Hira, Aysha and Ali, Safdar and Kifayat, Kashif},
+  year = {2019},
+  month = jul,
+  journal = {Computer Methods and Programs in Biomedicine},
+  volume = {175},
+  pages = {179--192},
+  issn = {01692607},
+  doi = {10.1016/j.cmpb.2019.04.026},
+  langid = {english}
+}
+
+@article{jiangSegmentationCommonInternal2021a,
+  title = {Segmentation of Common and Internal Carotid Arteries from {{3D}} Ultrasound Images Based on Adaptive Triple Loss},
+  author = {Jiang, Mingjie and Zhao, Yuan and Chiu, Bernard},
+  year = {2021},
+  month = sep,
+  journal = {Medical Physics},
+  volume = {48},
+  number = {9},
+  pages = {5096--5114},
+  issn = {0094-2405, 2473-4209},
+  doi = {10.1002/mp.15127},
+  langid = {english}
+}
+
+@incollection{kimDeepLearningBiomedical2020,
+  title = {Deep Learning in Biomedical Image Analysis},
+  booktitle = {Biomedical {{Information Technology}}},
+  author = {Kim, Minjeong and Yan, Chenggang and Yang, Defu and Wang, Qian and Ma, Junbo and Wu, Guorong},
+  year = {2020},
+  pages = {239--263},
+  publisher = {{Elsevier}},
+  doi = {10.1016/B978-0-12-816034-3.00008-0},
+  isbn = {978-0-12-816034-3},
+  langid = {english}
+}
+
+@article{maeckenUltrasoundImagingVascular2007,
+  title = {Ultrasound Imaging in Vascular Access:},
+  shorttitle = {Ultrasound Imaging in Vascular Access},
+  author = {Maecken, Tim and Grau, Thomas},
+  year = {2007},
+  month = may,
+  journal = {Critical Care Medicine},
+  volume = {35},
+  number = {Suppl},
+  pages = {S178-S185},
+  issn = {0090-3493},
+  doi = {10.1097/01.CCM.0000260629.86351.A5},
+  langid = {english}
+}
+
+@article{mildenbergerIntroductionDICOMStandard2002,
+  title = {Introduction to the {{DICOM}} Standard},
+  author = {Mildenberger, Peter and Eichelberg, Marco and Martin, Eric},
+  year = {2002},
+  month = apr,
+  journal = {European Radiology},
+  volume = {12},
+  number = {4},
+  pages = {920--927},
+  issn = {0938-7994, 1432-1084},
+  doi = {10.1007/s003300101100},
+  langid = {english}
+}
+
+@article{mustraOverviewDICOMStandard2008,
+  title = {Overview of the {{DICOM Standard}}},
+  author = {Mustra, Mario and Delac, Kresimir and Grgic, Mislav},
+  year = {2008},
+  journal = {th International Symposium ELMAR},
+  pages = {6},
+  langid = {english}
+}
+
+@article{norrisUltrasoundSufficientVascular2004,
+  title = {Is {{Ultrasound Sufficient}} for {{Vascular Imaging Prior}} to {{Carotid Endarterectomy}}?},
+  author = {Norris, John W. and Halliday, Alison},
+  year = {2004},
+  month = feb,
+  journal = {Stroke},
+  volume = {35},
+  number = {2},
+  pages = {370--371},
+  issn = {0039-2499, 1524-4628},
+  doi = {10.1161/01.STR.0000115295.63866.E0},
+  langid = {english}
+}
+
+@article{pesapaneArtificialIntelligenceMedical2018,
+  title = {Artificial Intelligence in Medical Imaging: Threat or Opportunity? {{Radiologists}} Again at the Forefront of Innovation in Medicine},
+  shorttitle = {Artificial Intelligence in Medical Imaging},
+  author = {Pesapane, Filippo and Codari, Marina and Sardanelli, Francesco},
+  year = {2018},
+  month = dec,
+  journal = {European Radiology Experimental},
+  volume = {2},
+  number = {1},
+  pages = {35},
+  issn = {2509-9280},
+  doi = {10.1186/s41747-018-0061-6},
+  langid = {english}
+}
+
+@article{phillipsAdvancesHealthTechnology2019,
+  title = {Advances in {{Health Technology Use}} and {{Implementation}} in the {{Era}} of {{Healthy Living}}: {{Implications}} for {{Precision Medicine}}},
+  shorttitle = {Advances in {{Health Technology Use}} and {{Implementation}} in the {{Era}} of {{Healthy Living}}},
+  author = {Phillips, Shane A. and Ali, Mohamed and Modrich, Charles and Oke, Shariwa and Elokda, Ahmed and Laddu, Deepika and Bond, Samantha},
+  year = {2019},
+  month = jan,
+  journal = {Progress in Cardiovascular Diseases},
+  volume = {62},
+  number = {1},
+  pages = {44--49},
+  issn = {00330620},
+  doi = {10.1016/j.pcad.2018.12.007},
+  langid = {english}
+}
+
+@article{sakasTrendsMedicalImaging2002,
+  title = {Trends in Medical Imaging: From {{2D}} to {{3D}}},
+  shorttitle = {Trends in Medical Imaging},
+  author = {Sakas, Georgios},
+  year = {2002},
+  month = aug,
+  journal = {Computers \& Graphics},
+  volume = {26},
+  number = {4},
+  pages = {577--587},
+  issn = {00978493},
+  doi = {10.1016/S0097-8493(02)00103-6},
+  langid = {english}
+}
+
+@article{scouttCarotidUltrasound2019a,
+  title = {Carotid {{Ultrasound}}},
+  author = {Scoutt, Leslie M. and Gunabushanam, Gowthaman},
+  year = {2019},
+  month = may,
+  journal = {Radiologic Clinics of North America},
+  volume = {57},
+  number = {3},
+  pages = {501--518},
+  issn = {00338389},
+  doi = {10.1016/j.rcl.2019.01.008},
+  langid = {english}
+}
+
+@article{shenArtificialIntelligenceUltrasound2021a,
+  title = {Artificial Intelligence in Ultrasound},
+  author = {Shen, Yu-Ting and Chen, Liang and Yue, Wen-Wen and Xu, Hui-Xiong},
+  year = {2021},
+  month = jun,
+  journal = {European Journal of Radiology},
+  volume = {139},
+  pages = {109717},
+  issn = {0720048X},
+  doi = {10.1016/j.ejrad.2021.109717},
+  langid = {english}
+}
+
+@article{smistadRealTimeAutomaticArtery2016a,
+  title = {Real-{{Time Automatic Artery Segmentation}}, {{Reconstruction}} and {{Registration}} for {{Ultrasound-Guided Regional Anaesthesia}} of the {{Femoral Nerve}}},
+  author = {Smistad, Erik and Lindseth, Frank},
+  year = {2016},
+  month = mar,
+  journal = {IEEE Transactions on Medical Imaging},
+  volume = {35},
+  number = {3},
+  pages = {752--761},
+  issn = {0278-0062, 1558-254X},
+  doi = {10.1109/TMI.2015.2494160},
+  langid = {english}
+}
+
+@article{spacekUseUltrasoundGuidance2018a,
+  title = {Use of Ultrasound Guidance in Vascular Cannulation and Effusion Punctures at the Cardiology Department},
+  author = {{\v S}pa{\v c}ek, Radim and Jiravsk{\'y}, Otakar and Neuwirth, Radek and Holek, Bronislav and {\v S}k{\v n}ou{\v r}il, Libor and He{\v c}ko, Jan and Branny, Marian},
+  year = {2018},
+  month = jun,
+  journal = {Cor et Vasa},
+  volume = {60},
+  number = {3},
+  pages = {e306-e313},
+  issn = {00108650, 18037712},
+  doi = {10.1016/j.crvasa.2017.08.001},
+  langid = {english}
+}
+
+@misc{SPARQNewWay,
+  title = {{{SPARQ New Way}} of {{Thinking1}}. 2 {{OCZEKIWANIA Intencive}} Care/{{RA Mobilno\'s\'c}} Aparatu {{USG \L atwo\'s\'c}} i Intuicyjno\'s\'c U\.zycia Aparatu {{USG Pewno\'s\'c}} Diagnostyczna. - Ppt Pobierz},
+  note = {[data dost\k{e}pu: 2021-11-28]},
+  howpublished = {\url{https://slideplayer.pl/slide/811173/}}
+}
+
+@article{tangRoleArtificialIntelligence2020a,
+  title = {The Role of Artificial Intelligence in Medical Imaging Research},
+  author = {Tang, Xiaoli},
+  year = {2020},
+  month = nov,
+  journal = {BJR|Open},
+  volume = {2},
+  number = {1},
+  pages = {20190031},
+  issn = {2513-9878},
+  doi = {10.1259/bjro.20190031},
+  langid = {english}
+}
+
+@article{troianosGuidelinesPerformingUltrasound2011a,
+  title = {Guidelines for {{Performing Ultrasound Guided Vascular Cannulation}}: {{Recommendations}} of the {{American Society}} of {{Echocardiography}} and the {{Society}} of {{Cardiovascular Anesthesiologists}}},
+  shorttitle = {Guidelines for {{Performing Ultrasound Guided Vascular Cannulation}}},
+  author = {Troianos, Christopher A. and Hartman, Gregg S. and Glas, Kathryn E. and Skubas, Nikolaos J. and Eberhardt, Robert T. and Walker, Jennifer D. and Reeves, Scott T.},
+  year = {2011},
+  month = dec,
+  journal = {Journal of the American Society of Echocardiography},
+  volume = {24},
+  number = {12},
+  pages = {1291--1318},
+  issn = {08947317},
+  doi = {10.1016/j.echo.2011.09.021},
+  langid = {english}
+}
+
+@book{worldhealthorganizationIMAIDistrictClinician2012,
+  title = {{{IMAI}} District Clinician Manual: Hospital Care Adolescents and Adults : Guidelines for the Management of Illnessess with Limited-Resources},
+  shorttitle = {{{IMAI}} District Clinician Manual},
+  author = {{World Health Organization}},
+  year = {2012},
+  publisher = {{World Health Organization}},
+  address = {{Geneva}},
+  chapter = {2 v.},
+  isbn = {978-92-4-154831-1},
+  langid = {english},
+  keywords = {Adolescent,Adult,Clinical Competence,Community Health Services,Delivery of Health Care,Developing Countries,Disease Management,Guideline,Hospitals,standards}
+}
+
+@inproceedings{xieTwostageDualdecoderConvolutional2020a,
+  title = {Two-Stage and Dual-Decoder Convolutional {{U-Net}} Ensembles for Reliable Vessel and Plaque Segmentation in Carotid Ultrasound Images},
+  booktitle = {2020 19th {{IEEE International Conference}} on {{Machine Learning}} and {{Applications}} ({{ICMLA}})},
+  author = {Xie, Meiyan and Li, Yunzhu and Xue, Yunzhe and Huntress, Lauren and Beckerman, William and Rahimi, Saum A. and Ady, Justin W. and Roshan, Usman W.},
+  year = {2020},
+  month = dec,
+  pages = {1376--1381},
+  publisher = {{IEEE}},
+  address = {{Miami, FL, USA}},
+  doi = {10.1109/ICMLA51294.2020.00214},
+  isbn = {978-1-72818-470-8},
+  langid = {english}
+}
+
+@article{yangUltrasoundCommonCarotid2013,
+  title = {Ultrasound {{Common Carotid Artery Segmentation Based}} on {{Active Shape Model}}},
+  author = {Yang, Xin and Jin, Jiaoying and Xu, Mengling and Wu, Huihui and He, Wanji and Yuchi, Ming and Ding, Mingyue},
+  year = {2013},
+  journal = {Computational and Mathematical Methods in Medicine},
+  volume = {2013},
+  pages = {1--11},
+  issn = {1748-670X, 1748-6718},
+  doi = {10.1155/2013/345968},
+  langid = {english}
+}
+
+

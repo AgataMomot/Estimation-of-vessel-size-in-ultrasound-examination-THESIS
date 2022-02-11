@@ -1,0 +1,69 @@
+\chapter{Dodatek A}
+W dodatku umieszczamy opis ewentualnych znanych algorytmów, z których korzystamy proponuj¹c w³asn¹ metodologiê, opisan¹ w rozdziale~\ref{Chapter_Metodologia}. Wykaz pozycji literaturowych tworzymy w oddzielnym pliku \texttt{Praca.bib}. Chc¹c siê odwo³aæ w tekœcie do wybranej pozycji bibliograficznej korzystamy z komendy \texttt{cite}. Efekt jej u¿ycia dla kilku pozycji jednoczeœnie to~\cite{Tadeusiewicz,Malina,Nieniewski_Morfologia}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Dodatek B}
+Podstawowe kwestie techniczne dotycz¹ce wzorów, rysunków, tabel poni¿ej.
+
+Wzory tworzymy w œrodowisku \texttt{equation}. Chc¹c odwo³aæ siê do wybranego wzoru gdzieœ w tekœcie nale¿y nadaæ mu stosown¹, niepowtarzaln¹ i jednoznaczn¹ etykietê, po ty by móc np. napisaæ zdanie: ze wzoru~\ref{Wzor_Dodawanie} wynika \ldots
+\begin{equation}\label{Wzor_Dodawanie}
+	c = a + b
+\end{equation}
+
+Wzory z³o¿one, charakteryzuj¹ce siê przypisaniem wartoœci zmiennej w pewnych okolicznoœciach tworzymy przy u¿yciu otoczenia \texttt{eqnarray}. Odwo³anie do wzoru jak wczeœniej. 
+\begin{eqnarray}\label{equ_progowanie}
+    BW & = & \left \{
+    \begin{array}{ll}
+      1, & I(x,y) \geq T \\
+      0, & I(x,y) < T\\
+    \end{array}
+    \right.,
+\end{eqnarray}
+
+% \subsection{Usuwanie numeracji przy równaniach}
+
+Numeracjê równañ mo¿na tymczasowo (w~danej linijce) wy³¹czyæ poprzez u¿ycie $\backslash{}nonumber$
+\begin{eqnarray}
+	a_i = a_{i-1}+a_{i-2}\nonumber \\ % w tej linijce nie ma numeru
+              +a_{i-3}
+\end{eqnarray}
+
+
+\section{Wstawianie rysunków}
+Rysunki umieszczamy w otoczeniu \texttt{figure}, centruj¹c je w poziomie komend¹ \texttt{centering}. Rozmiary rysunku ustalamy w komendzie \texttt{includegraphics} dobieraj¹c wielkoœæ wzglêdem rozmiaru strony lub bezwzglêdnie np. w cm. Ponadto najpierw zapowiadamy pojawienie siê rysunku w tekœcie (czyli np. Na rysunku (Rys~\ref{Rysunek_LogoIB}) pracy, a dopiero póŸniej wstawiamy sam rysunek. Dodatkowo sterowaæ mo¿emy umiejscowieniem rysunku na stronie dziêki parametrom \texttt{[!htb]} okreœlaj¹cym miejsce. Odpowiednio s¹ to: \texttt{here}, \texttt{top}, \texttt{bottom}. 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=.35\textwidth]{logoRIB}
+	\caption{Logo Wydzia³u In¿ynierii Biomedycznej.}\label{Rysunek_LogoIB}
+\end{figure}
+
+Do³¹czaj¹c rysunki nie trzeba podawaæ rozszerzenia (wrêcz jest to odradzane). Jeœli rysunki znajduj¹ siê w~katalogu \emph{rysunki}, nie trzeba równie¿ podawaæ œcie¿ki do nich.
+
+\section{Wstawianie tabelek}
+Analogicznie postêpujemy z tabelkami, z t¹ ró¿nic¹ ¿e tworzymy j¹ w otoczeniu \texttt{table}. W nim natomiast sam¹ tabelê definiujemy albo w œrodowisku \texttt{tabular}, albo \texttt{tabularx}. Podobnie z odwo³aniami w tekœcie: najpierw odwo³anie w Tab.~\ref{Tabelka_Tabela}, a dopiero póŸniej sama tabela.
+\begin{table}[!htb]
+	\centering
+	\topcaption{Opis nad tabelk¹.}\label{Tabelka_Tabela}
+	\begin{tabular}{|c|c|c|c|} \hline \hline 
+		Kolumna 1 & Kolumna 2 & Kolumna 3 & Kolumna 4 \\ \hline
+		Wiersz 1 & & & \\ \hline
+		Wiersz 2 & & & \\ \hline
+		Wiersz 3 & & & \\ \hline
+		& & & \\ \hline
+		& & & \\ \hline
+	\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Kwestie edytorskie}
+Zbiór zasad pomocnych przy redagowaniu tekstu pracy wystarczaj¹co szczegó³owo przedstawia ksi¹¿ka~\cite{Chwalowski}.
+
+Uwaga! Pisz¹c pracê nale¿y zwróciæ uwagê na nastêpuj¹ce kwestie:
+\begin{enumerate}
+	\item Prace piszemy w formie bezosobowej.
+	\item Unikamy okreœleñ potocznych, spolszczeñ funkcjonuj¹cych codziennej mowie itp.
+	\item Pos³uguj¹c siê znanymi nam (a nie czytelnikowi) has³ami (równie¿ skrótami, akronimami) najpierw je definiujemy i~t³umaczymy, a~dopiero póŸniej traktujemy za znane.
+	\item Podpisy pod rysunkami lub nad tabelami traktujemy jak zdania, a wiêc powinny stanowiæ spójn¹ ca³oœæ oraz powinny zostaæ zakoñczone kropk¹.
+	\item Podobnie wypunktowania (po dwukropku kolejne punkty pisane ma³ymi literami, oddzielane przecinkami, ostatni zakoñczony kropk¹ o ile koñczy zdanie).
+	\item Do ka¿dego rysunku, tabeli, pozycji bibliograficznej musi istnieæ odwo³anie w tekœcie pracy, przy czym do pierwszych dwóch musi siê ono pojawiæ zanim umieœcimy rysunek/tabelê.
+\end{enumerate}

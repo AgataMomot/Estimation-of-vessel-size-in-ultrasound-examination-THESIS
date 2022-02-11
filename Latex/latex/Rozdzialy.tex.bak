@@ -1,0 +1,257 @@
+\chapter*{Projekt in¿ynierski a praca magisterska}
+
+W dalszej czêœci dokumentu znajduj¹ siê wytyczne dotycz¹ce projektu in¿ynierskiego. Nale¿y jednak zaznaczyæ, ¿e na ich przyk³adzie pokazano sposoby wykorzystania ró¿nych narzêdzi \LaTeX{}a, \textbf{dlatego tak¿e studenci realizuj¹cy pracê magistersk¹ powinni siê z nimi zaznajomiæ}. 
+
+Dodatkowo \textbf{studenci studiów magisterskich} powinni zapoznaæ siê z~procedurami dyplomowania. \textbf{Praca magisterska} powinna zawieraæ nastêpuj¹ce elementy:
+\begin{itemize}
+        \item sformu³owanie problemu,
+        \item analizê literatury zwi¹zanej z tematem oraz istniej¹cymi rozwi¹zaniami problemu,
+        \item propozycjê rozwi¹zania problemu oraz wyczerpuj¹cy opis przyjêtego rozwi¹zania,
+        \item analizê wyników i wnioski koñcowe.
+\end{itemize}
+Sugerowana objêtoœæ [tej] pracy to 60-100 stron.
+
+Praca [magisterska] powinna powstaæ w oparciu o co najmniej 6 pozycji bibliograficznych kwalifikowanych przez promotora (monografie, artyku³y w czasopismach naukowych, publikacje w materia³ach konferencji \cite{grovesAutomaticSegmentationCarotid2020a}, \cite{MaskaRCNNWykrywania2021}
+
+
+
+
+\chapter{Wstêp}
+Postêp medycyny niew¹tpliwie z roku na rok staje siê coraz wiêkszy. Takie dzia³anie motywuje przede wszystkim chêæ poprawy ogólnego zdrowia spo³eczeñstwa, prowadz¹c do wyd³u¿enia œredniego ¿ycia ludzi jak i nierzadko zapobiegania przedwczesnej œmierci. Prowadzone s¹ stale liczne badania maj¹ce na celu: szybkie stawianie diagnoz, klasyfikacjê nowo odkrytych chorób, rozwój coraz to skuteczniejszych i mniej inwazyjnych metod lecenia czy udoskonalanie metod profilaktyki, w tym wdra¿anie szczepieñ zapobiegaj¹cym nowym jednostkom chorobowym. Istotna jest wiêc wspó³praca pomiêdzy œrodowiskiem medycznym jak i naukowym w celu osi¹gania coraz to lepszych rozwi¹zañ. \\
+\indent Oprócz rozwoju medycyny, wiele obszarów ¿ycia ludzkiego stale d¹¿y do polepszenia jego ogólnej jakoœci. Postêp cywilizacyjny niezwykle szybko dostarcza nam nowych rozwi¹zañ technologicznych. Okazuje siê, ¿e wspó³dzia³anie z pozoru rozbie¿nych dziedzin mo¿e przynieœæ bardzo dobre rezultaty. Takim przyk³adem mo¿e byæ medycyna i rozwój nowych technologii, które znajduj¹ szerokie zastosowanie w profilaktyce i diagnostyce chorób (np. aparaty do diagnostyki obrazowej: USG-- ultrasonografia, TK-- tomografia komputerowa, MR-- rezonans magnetyczny), planowaniu i nawigacji chirurgicznej \cite{sakasTrendsMedicalImaging2002} (np. systemy œledz¹ce, okulary do rozszerzonej rzeczywistoœci VR (ang. \textit{Virtual Reality}), wspomaganiu zabiegów chirurgicznych i rehabilitacji (np. ramiona robotów) projektowaniu i wytwarzaniu implantów (równie¿ z wykorzystaniem druku 3D) oraz monitorowaniu aktywnoœci fizycznych i prowadzeniu zdrowego stylu ¿ycia (np. mobilne aplikacje oraz opaski sportowe) \cite{phillipsAdvancesHealthTechnology2019}.\\
+\indent Niew¹tpliwie ka¿dy z przytoczonych przyk³adów przynosi wiele korzyœci. Nale¿y jednak podkreœliæ, ¿e wczesna diagnostyka chorób mo¿e mieæ najwiêksze znaczenie w odniesieniu do przywrócenia zdrowia lub zachowania ¿ycia. Diagnostyka, nie licz¹c dzia³añ profilaktycznych, stanowi pierwszy i nierzadko decyduj¹cy krok prowadz¹cy do ca³kowitego wyleczenia lub podtrzymania ¿ycia pacjenta. Diagnoza medyczna, w zale¿noœci od przypadku, mo¿e polegaæ na ocenie pojawiaj¹cych siê objawów, badañ laboratoryjnych, badañ obrazowych lub po³¹czeniu kilku procedur. Etap ten jest bardzo wa¿ny, bior¹c pod uwagê czas potrzebny na okreœlenie jednostki chorobowej oraz zgodnoœæ postawionej diagnozy z rzeczywistoœci¹. \\
+\indent Z biegiem czasu coraz czêœciej obserwuje siê nowe rozwi¹zania wspieraj¹ce diagnostykê obrazow¹. Mog¹ one polegaæ na segmentacji i/lub oceny danego regionu zainteresowania jako obszar zmieniony (lub nie) chorobowo. Mo¿liwa jest równie¿ dok³adniejsza klasyfikacja pod k¹tem ustalenia jednostki chorobowej lub szacowanie i analiza wielkoœci takich jak np. d³ugoœæ, œrednica czy objêtoœæ obserwowanych struktur (np. naczynia krwionoœne, organy, koœci). Czynnikami motywuj¹cymi wdra¿anie takich systemów jest przede wszystkim wiêksza wydajnoœæ i dok³adnoœæ automatycznych, wspomaganych komputerowo systemów w stosunku do samodzielnej diagnozy, opartej na wiedzy lekarskiej. Co wiêcej, zalet¹ takich rozwi¹zañ jest pominiêcie czynnika ludzkiego, który mo¿e doprowadziæ do b³êdnych wniosków, zagra¿aj¹cych bezpoœrednio zdrowiu i ¿yciu pacjenta. Naturalnym jest nie dopuszczenie do pe³nej automatyzacji w kwestii dzia³añ medycznych, jednak wsparcie takich narzêdzi mo¿e przynieœæ ogrom korzyœci. Systemy te mog¹ opieraæ siê na klasycznych metodach przetwarzania obrazowego jak i wykorzystaniu sztucznej inteligencji AI (ang. \textit{Artificial Intelligence}). W dalszej czêœci pracy temat ten zostanie przybli¿ony \cite{amishaOverviewArtificialIntelligence2019, chenMachineLearningPrediction2017, shenArtificialIntelligenceUltrasound2021a}. 
+
+
+\section{Wprowadzenie teoretyczne}
+Wprowadzenie do tematyki pracy zosta³o podzielone sekcje dotycz¹ce kolejno: zasady dzia³ania, przebiegu badania USG, zastosowania ultrasonografii oraz wykorzystania w przypadku obrazowania naczyñ krwionoœnych (\ref{ultr}), kaniulacji ¿y³ obwodowych (\ref{kan}), diagnostyki obrazowej wspomaganej komputerowo (\ref{diag}), z podzia³em na tradycyjne metody i te z wykorzystaniem AI oraz standardu DICOM (\ref{dic}). Na koñcu zosta³a przybli¿ona tematyka okreœlania wielkoœci naczyñ krwionoœnych na podstawie obrazów USG (\ref{wielkosc}).
+
+\subsection{Ultrasonografia}\label{ultr}
+Do badañ obrazowych mo¿emy zaliczyæ przede wszystkim: USG, TK, MR, pozytonow¹ tomografiê emisyjna PET (ang. \textit{Positron Emission Tomography}) oraz tomografiê emisyjn¹ pojedynczych fotonów SPECT (ang. \textit{Single-Photon Smission Computed Tomography}). Ka¿de z przytoczonych modalnoœci podlega innej charakterystyce. W zale¿noœci sytuacji pacjenta dobiera siê odpowiednie badanie.\\
+\indent Termin ultradŸwiêki (fale akustyczne) odnosi siê do czêstotliwoœci, które przekraczaj¹ 20 kHz. Jest to granica traktowana jako górna czêstotliwoœæ, jak¹ mo¿e us³yszeæ ludzkie ucho. Zazwyczaj systemy ultradŸwiêkowe dzia³aj¹ w zakresie czêstotliwoœci od 2 MHz do 20 MHz. Badanie przeprowadza siê przy u¿yciu specjalnej aparatury, która poprzez g³owicê wysy³a do wnêtrza organizmu fale ultradŸwiêkowe. Powstaj¹ one dziêki zawartym w g³owicy piezoelektrykom i odwrotnemu zjawisku piezoelektrycznym. Polega ono na zdolnoœci kryszta³ów piezoelektrycznych do odpowiadania na zadany sygna³ elektryczny mechaniczn¹ deformacj¹ i tym samym wytwarzaniem fali mechanicznej (ultradŸwiêkowej). Te nastêpnie odbijaj¹ siê od badanych tkanek. Powracaj¹ce fale trafiaj¹ spowrotem do g³owicy, gdzie zachodzi proste zjawisko piezoelektryczne. W wyniki poddania niektórych kryszta³ów
+mechanicznym naprê¿eniom (œciskaniu lub rozci¹ganiu) generowany zostaje potencja³ elektryczny, który zostaje zmierzony i odpowiednio przetworzony (Rys. \ref{piez}) \cite{mastersthesis, ali2008signal}.\\
+\begin{figure} 
+\includegraphics[width=0.8\textwidth]{piezo}
+\centering
+\caption{Schemat zjawiska piezoelektrycznego \cite{mastersthesis}.}\label{piez}
+\end{figure}
+\indent Podczas badania USG dochodzi do kilku zjawisk: odbicie, rozproszenie (opór akustyczny), t³umienie (os³abienie) oraz za³amanie (refrakcja) (Rys. \ref{zjawiska}).
+\begin{figure} 
+\includegraphics[width=0.7\textwidth]{zjawiska}
+\centering
+\caption{Zjawiska zachodz¹ce po emisji fali USG \cite{SPARQNewWay}.}\label{zjawiska}
+\end{figure}
+Wykorzystanie zjawiska odbicia fali na granicy oœrodków o ró¿nych gêstoœciach (ró¿na prêdkoœæ rozchodzenia siê fali) powoduje odbiór ultradŸwiêków w ró¿nych odstêpach czasu, co pozwala na ocenê wielkoœci, kszta³tu i struktury narz¹dów, a w szczególnoœci ró¿nicowanie zmian o charakterze litym od zmian o charakterze p³ynowym. Do obrazowania wykorzystywana jest czêœæ odbita fali w postaci tzw. powracaj¹cego echa, które analizowane jest pod k¹tem po³o¿enia i intensywnoœci. Po komputerowym przetworzeniu danych, na ekranie widoczne s¹ punkty odpowiadaj¹ce umiejscowieniom odbicia fal. Intensywnoœci echa przyporz¹dkowane s¹ odpowiednim odcieniom ze skali szaroœci-- od tonu najciemniejszego (kolor czarny) dla braku lub bardzo ma³ej intensywnoœci echa, do koloru bia³ego odpowiadaj¹cego du¿emu natê¿eniu \cite{ali2008signal}.\\
+
+\indent Mo¿emy wyró¿niæ 3 typy g³owic USG:
+\begin{itemize}
+\item[•] Liniowa-- zawiera szereg elementów piezoelektrycznych ustawionych wspó³liniowo. Otrzymany obraz jest obszarem prostok¹tnym. G³owice liniowe pozwalaj¹ uzyskaæ najdok³adniejszy obraz.
+\item[•] Sektorowa-- elementy piezoelektryczne s¹ umieszczone na obrotowym wirniku, co pozwala na zastosowanie mniejszej ich liczby. G³owice sektorowe charakteryzuj¹ siê znacznie szerszym obszarem wi¹zki ni¿ g³owice liniowe, ale zazwyczaj du¿o gorszymi parametrami rozdzielczoœci. 
+\item[•] Konweksowa-- jest rozwi¹zaniem poœrednim miêdzy g³owic¹ sektorow¹ a liniow¹. Pozwala uzyskaæ znacznie dok³adniejsze obrazy ni¿ g³owica sektorowa, a pole obserwacji jest du¿o wiêksze ni¿ w przypadku g³owicy liniowej \cite{ali2008signal}.
+\end{itemize}
+\indent Obrazowanie ultrasonograficzne to nieinwazyjna i tania metoda, dostarczaj¹ca wyników w czasie rzeczywistym w przeciwieñstwie do pozosta³ych metod. Zapewnia wiele korzyœci takich jak brak promieniowania jonizuj¹cego oraz zapewnia ci¹g³e obrazowanie wideo w czasie rzeczywistym. Dodatkow¹ zalet¹ jest bezbolesnoœæ badania. Niestety USG posiada równie¿ kilka wad. Spoœród wymienionych badañ ultrasonografia jest jedn¹ z najmniej dok³adnych metod i podatn¹ na szumy, objawiaj¹ce siê niewyraŸnym obrazem \cite{cheUltrasoundRegistrationReview2017a, ali2008signal}. Na rysunku \ref{porownanie} przedstawiono zestawienie przyk³adowych obrazów poszczególnych metod obrazowania.
+
+\newcounter{wielo}[figure]
+\renewcommand\thewielo{\alph{wielo}}
+    \def\captionlabeldelim{.}
+    \def\figurename{Rysunek}
+	\setcounter{wielo}{0}
+\begin{figure}[h]
+	\centering
+	\setlength{\fboxsep}{0pt}
+	\begin{minipage}[t][][c]{4cm}
+	\centering \includegraphics[width=0.85\textwidth]{CT}\\
+	(\refstepcounter{wielo}\label{CT}\alph{wielo})
+	\end{minipage}%
+	\begin{minipage}[t][][c]{4cm}
+	\centering \includegraphics[width=0.85\textwidth]{MR}\\
+	(\refstepcounter{wielo}\label{MR}\alph{wielo})
+	\end{minipage}
+	\begin{minipage}[t][][c]{4cm}
+	\centering \includegraphics[width=0.85\textwidth]{PET}\\
+	(\refstepcounter{wielo}\label{PET}\alph{wielo})
+	\end{minipage}
+	\begin{minipage}[t][][c]{4cm}
+	\centering \includegraphics[width=0.85\textwidth]{SPECT}\\
+	(\refstepcounter{wielo}\label{SPECT}\alph{wielo})
+	\end{minipage}
+	\begin{minipage}[t][][c]{4cm}
+	\centering \includegraphics[width=0.85\textwidth]{USG}\\
+	(\refstepcounter{wielo}\label{USG}\alph{wielo})
+	\end{minipage}
+    \captionsetup{justification=centering}
+	\caption{Porównanie obrazowania mózgu za pomoc¹ ró¿nych metod: TK (\ref{CT}), MR (\ref{MR}), PET (\ref{PET}), SPECT (\ref{SPECT}), USG (\ref{USG}) \cite{el-gamalCurrentTrendsMedical2016}.}\label{porownanie}
+	\end{figure}
+	
+ 
+
+
+
+
+
+\indent TK, MR, PET oraz SPECT dostarczaj¹ w jednym badaniu wiele obrazów przekrojowych 2D danej partii cia³a. Taka seria daje wiêkszy i dok³adniejszy ogl¹d na analizowany obszar organizmu. Co wiêcej umo¿liwia w dalszym przetwarzaniu przeprowadzenie modelu 3D np. badanego organu. W przypadku braku takiej koniecznoœci czêsto wyborem staje siê w³aœnie USG. Istnieje jednak szansa na rekonstrukcje 3D równie¿ na podstawie obrazów USG, jednak wymaga to zastosowania w takcie procedury systemu œledz¹cego, które pozostaje niestety obarczone b³êdem. Innym sposobem mo¿e byæ mechaniczna manipulacja g³owic¹ (przechylanie, obracanie lub liniowe przemieszczenie) uzyskuj¹c wiele skanów
+interesuj¹cego obszaru \cite{chenMachineLearningPrediction2017, grovesAutomaticSegmentationCarotid2020b, sakasTrendsMedicalImaging2002, ali2008signal}. \\
+\indent Obrazowanie ultrasonograficzne pozwala unikn¹æ wysokich kosztów w przypadku MR, promieniowania w TK, oraz nara¿enie na potencjalnie szkodliwe œrodki kontrastowe. W zwi¹zku z tym jest to jedyne tego typu badanie wykonywane kobietom w ci¹¿y w celu oceny rozwoju p³odu i nie tylko. USG jest wykorzystywane do analizy wielu narz¹dów takich jak: mózg, serce, w¹troba, nerki, macica i inne. Badanie to równie¿ znajduje zastosowanie w kardiologii do oceny naczyñ krwionoœnych (np. wykrywanie blaszek mia¿d¿ycowych) oraz jako kontrola obrazowa podczas procedur takich jak np. kaniulacja ¿y³ \cite{grovesAutomaticSegmentationCarotid2020b, scouttCarotidUltrasound2019a}. 
+
+
+
+
+
+\subsection{Zastosowanie USG w kardiologii}\label{kan}
+USG z racji miêdzy innymi braku inwazyjnoœci, niskich kosztów w stosunku do TK czy MR oraz rejestracji obrazów w czasie rzeczywistym stara siê wykorzystywaæ na wielu polach diagnostyki medycznej. Jednym z nich nich jest badanie naczyñ krwionoœnych. Przyk³adem konkretnego zastosowania ultrasonografii w tym obszarze jest monitorowanie procedury kaniulacji. Pojêcie to odnosi siê do nak³uwania naczyñ krwionoœnych, zarówno ¿y³ jak i têtnic (np. ¿y³a szyjna IJV (ang. \textit{\textit{Internal Jugular Vein}}, ¿y³a udowa FV (ang. \textit{\textit{Femoral Vein}}), têtnica udowa FA (ang. \textit{Femoral Artery}) czy têtnica promieniowa RA (ang. \textit{Radial Artery})) (Rys. \ref{igla}). Celem dostania siê do œwiat³a naczynia krwionoœnego jest przyk³adowo aplikacja znieczulenia lub podanie leków do¿ylnych. Niestety czêstym powik³aniem s¹ przypadkowe nak³ucia s¹siedniego naczynia, powstawanie krwiaków w miejscach docelowych oraz odma op³ucna. Aby zmniejszyæ czêstoœæ tych niepowodzeñ procedurê kaniulacji zaczêto przeprowadzaæ pod nadzorem ultrasonografii. Pozwala to na obserwacjê przekroju naczynia krwionoœnego, po³o¿enia w stosunku do s¹siedniej têtnicy oraz œledzenie wbijanej ig³y. Segmentacja takich obrazów w czasie rzeczywistym z pewnoœci¹ przyczynia siê do jeszcze wiêkszej precyzji wykonuj¹cego nak³ucie \cite{troianosGuidelinesPerformingUltrasound2011a, spacekUseUltrasoundGuidance2018a, maeckenUltrasoundImagingVascular2007, smistadRealTimeAutomaticArtery2016a, worldhealthorganizationIMAIDistrictClinician2012}. 
+
+\begin{figure} 
+\includegraphics[width=0.5\textwidth]{igla}
+\centering
+\caption{Wizualizacja ig³y wk³uwanej do ¿y³y szyjnej wewnêtrznej w badaniu USG (przekrój poprzeczny). Czerwon¹ strza³k¹ oznaczono koñcówkê ig³y \cite{spacekUseUltrasoundGuidance2018a}.}\label{igla}
+\end{figure}
+
+USG uk³adu krwionoœnego mo¿e byæ równie¿ wykorzystywane nie tylko w celach diagnostycznych, ale równie¿ do planowania zabiegów chirurgicznych takich jak endarterektomia têtnic szyjnych CEA (ang. \textit{Carotid Endarterectomy}). Jest to uznana metoda leczenia mia¿d¿ycy têtnicy szyjnej i polega ona na operacyjnym usuniêciu, a dok³adnie wyciêciu blaszek mia¿d¿ycowych ze œwiat³a naczynia. Powstaj¹ca wewn¹trz têtnicy blaszka mia¿d¿ycowa skutkuje zwê¿eniem, a nawet zamkniêcie jej œwiat³a. Mia¿d¿yca têtnic szyjnych jest powa¿n¹ przyczyn¹ wyst¹pienia udaru niedokrwiennego mózgu. W zwi¹zku z tym endarterektomia na wczesnych etapach mia¿d¿ycy staje siê skuteczn¹ form¹ leczenia. Aby przeprowadziæ taki zabieg istotna jest bardzo dok³adna lokalizacja blaszek ze wzglêdu na ich niewielkie wymiary oraz mo¿liwoœæ uszkodzenia wra¿liwej struktury jak¹ jest têtnica. Dziêki USG przedoperacyjnemu mo¿na dostatecznie okreœliæ miejsca wystêpuj¹cych zmian i odpowiednio zaplanowaæ proces operacji. Wspomagaj¹cym rozwi¹zaniem staj¹ siê systemy dokonuj¹ce segmentacji naczyñ wraz z blaszkami mia¿d¿ycowymi. Dziêki temu mo¿na okreœliæ ich wielkoœæ (np. d³ugoœæ, objêtoœæ w przypadku rekonstrukcji 3D) oraz pole przekroju ograniczonego œwiat³a têtnicy w danym miejscu, a nastêpnie po przeprowadzonej endarterektomii dokonaæ analizy porównawczej z uzyskanymi rezultatami \cite{norrisUltrasoundSufficientVascular2004, hassanRobustSpatialFuzzy2019a, chengCarotidPlaqueSegmentation2018a}. 
+
+
+Analizê stanu naczyñ krwionoœnych wykonuje siê równie¿ stosuj¹c ró¿ne modalnoœci standardowego USG. Przyk³adem mo¿e byæ USG Doopler, polegaj¹ce na obserwowaniu przep³ywu krwi. Ultrasonografia Dopplerowska wykorzystuje rozproszenie fali dŸwiêkowej na poruszaj¹cym siê obiekcie (np. przep³ywaj¹cych w naczyniach krwinkach), dziêki czemu pozwala na zdobycie informacji o prêdkoœci z jak¹ przemieszcza siê obserwowany obiekt. Na tej podstawie mo¿na dokonaæ oceny, w których miejscach przep³yw krwi jest wolniejszy oraz gdzie przep³yw jest zablokowany. W jednym z rodzajów badania z wykorzystaniem zjawiska Dopplera obserwowaæ mo¿na kolorystykê poruszaj¹cych siê szybko obiektów odpowiedni¹ w zale¿noœci od kierunku przep³ywu. Elementy statyczne pozostaj¹ w odcieniach szaroœci.
+W wyniku analizy têtnic i ¿y³ przy u¿yciu tej techniki, mo¿na obliczyæ maksymaln¹ wartoœæ prêdkoœci lub objêtoœæ krwi przep³ywaj¹c¹ przez naczynie przypadaj¹c¹ na jednostkê czasu \cite{troianosGuidelinesPerformingUltrasound2011a, spacekUseUltrasoundGuidance2018a, worldhealthorganizationIMAIDistrictClinician2012}. 
+
+Inn¹ odmian¹ klasycznego USG jest wewn¹trznaczyniowe obrazowanie ultradŸwiêkami IVUS (ang. \textit{Intravascular Ultrasound}). Technika ta polega na wytworzeniu obrazów przekrojów poprzecznych podczas prowadzenia cewnika wewn¹trz naczyñ krwionoœnych. Dziêki temu mo¿na zaobserwowaæ œwiat³o naczyñ jak i strukturê œciany naczyniowej. W ostatnich latach technologia ta sta³a siê bardzo przydatna w analizie choroby mia¿d¿ycowej. Zapewnia informacja o charakterze zmiany mia¿d¿ycowej oraz kszta³cie i wielkoœæ blaszki mia¿d¿ycowej. Zbadano równie¿ inne zastosowanie IVUS jakim sta³a siê implantacja stentów. Automatyczne rozwi¹zania do segmentacji œcian naczyñ oraz analizy blaszek mia¿d¿ycowych pozwalaj¹ na uzyskanie wiêkszej dok³adnoœci oraz podejmowania szybszych dzia³añ w obliczu diagnozy i leczenia pacjentów \cite{cardinalIntravascularUltrasoundImage2006a}.
+
+
+\subsection{Standard DICOM}\label{dic}
+Rozwój sprzêtu przeznaczonego do obrazowania medycznego, wdra¿anych do u¿ytku przez ró¿nych producentów, wymusi³ opracowanie standardu przechowywania i wymiany obrazów medycznych. Dziêki wprowadzeniu wzorca DICOM (ang. \textit{Digital Imaging and Communication in Medicine}). Wymiana obrazów medycznych sta³a siê ³atwiejsza, szybsza i bezpieczniejsza pomiêdzy systemami informatycznych (np. RIS (ang. Radiology Information System), PACS (ang. Picture Archiving and Communication System)). Aktualna wersja (3.0) zosta³a opublikowana przez NEMA (ang. \textit{National Electrical Manufacturers Association}) w 1993 roku. Oprócz podstawowych danych obrazowych format takiego pliku (.dicom) przechowuje przydatne metadane takie jak: dane pacjenta, dane jednostki wykonuj¹cej badanie, datê, rodzaj badania, informacje dotycz¹ce cech obrazu oraz wiele innych. Standard DICOM posiada wa¿n¹ zaletê-- umo¿liwia dalsz¹ rozbudowê i aktualizacjê stale rozwijaj¹cych siê modu³ów. Z puntu widzenia szybkiego postêpu w dziedzinie obrazowania jest to bardzo przydatna cecha \cite{mildenbergerIntroductionDICOMStandard2002, mustraOverviewDICOMStandard2008}.
+
+
+
+
+
+\subsection{Analiza obrazowa wspomagana komputerowo}\label{diag}
+Postêp technologiczny aparatury przeznaczonej do obrazowania medycznego zapewnia coraz lepsz¹ jakoœæ uzyskiwanych obrazów. Dziêki wysokiej rozdzielczoœci mo¿liwe staje siê projektowanie automatycznych systemów przeznaczonych do analizy medycznej, niejednokrotnie przewy¿szaj¹cych mo¿liwoœci ekspertów. Takie rozwi¹zania mo¿na podzieliæ na klasyczne oraz te z u¿yciem sztucznej inteligencji. 
+
+Przetwarzanie obrazów jest szerokim pojêciem, obejmuj¹cym wiele ró¿nych metod maj¹cych na celu analizê lub/oraz modyfikacjê cech obrazowych w celu poprawy jego parametrów lub poszukiwania okreœlonych wzorców. Przyk³adem mo¿e byæ wykrywanie tekstur, kszta³tów, czy konturów. W tym obszarze zastosowanie nierzadko znajduj¹ filtry (czêsto stosowane do ogólnej poprawy jakoœci), maj¹ce na celu wyeksponowanie danych struktur w obrazie np. krawêdzi (filtr Canny'ego, Laplace'a). Przydatne s¹ równie¿ operacje morfologiczne, dziêki którym mo¿liwa jest modyfikacja cech geometrycznych obiektów. Bardzo wartoœciowym na wielu polach zabiegiem jest proces segmentacji. Polega on na podziale obrazu na regiony (zbiory pikseli) podobne wzglêdem siebie wed³ug pewnych przyjêtych w³asnoœci np. poziomy szaroœci. Istnieje wiele metod klasycznych wykorzystywanych do segmentacji poszukiwanych obiektów w obrazie. S¹ nimi: progowanie (np. Otsu), rozrost i/lub podzia³ obszaru, dopasowanie wzorca lub metody krawêdziowe np. aktywny kontur (ang. \textit{active contour}). Innym obszarem z zakresu przetwarzania obrazowego jest klasyfikacja na przyk³ad poprzez grupowanie lub z u¿yciem metod statystycznych \cite{doughertyDigitalImageProcessing2020}. 
+
+
+Zupe³nie inaczej do analizy obrazowej odnosi siê pojêcie sztucznej inteligencji. Termin AI jest stosowany, chc¹c zdefiniowaæ proces naœladowania funkcji poznawczych takich jak uczenie siê i rozwi¹zywanie problemów. Innymi s³owy sztuczna inteligencja to systemy, realizuj¹ce zadania, które zwykle wymagaj¹ ludzkiej inteligencji. W obszarze AI mo¿emy wyró¿niæ pojêcie uczenia maszynowego ML (ang. \textit{Machine Learning}), które oznacza uczenie siê na podstawie dostarczonych danych bez wyraŸnego zaprogramowania. Przyk³adami takich rozwi¹zañ s¹: analiza g³ównych sk³adowych PCA (ang. principal component analysis), maszyna wektorów noœnych SVM (support vector machines) oraz sztuczne sieci neuronowe ANN (ang. artificial neural networks). Architektura sieci neuronowej sk³ada siê z warstw, z³o¿onych z po³¹czonych ze sob¹ neuronów. Ka¿dy neuron wykonuje wa¿on¹ sumê danych wejœciowych, które s¹
+nastêpnie przekazywane do funkcji aktywacji. Wagi s¹ dobierane dynamicznie na etapie treningu. Mo¿na wyró¿niæ nastêpuj¹ce typy warstw: warstwa wejœciowa (przyjmuje dane wejœciowe), warstwa wyjœciowa (dostarcza wyniki przetwarzania danych) i warstwa ukryta (wyodrêbnia cechy analizowanych danych). Najnowsze osi¹gniêcia dotycz¹ podzbioru ML, jakim jest g³êbokie uczenie DL (ang. Deep Learning). S¹ to metody uczenia oparte na sieciach neuronowych, które dokonuj¹ samodzielnego uczenia, poprzez rozpoznawanie wzorców z zastosowaniem wielu warstw przetwarzania. Spoœród ró¿nych rozwi¹zañ g³êbokiego uczenia splotowe sieci neuronowe CNN (ang. Convolution Neural Network) mo¿na uznaæ za wysoko cenione i wykorzystywane w wielu dziedzinach ¿ycia ludzkiego. CNN s¹ niezwykle cennym narzêdziem w zakresie analizy obrazowej, szczególnie w zakresie medycznym 
+\cite{tangRoleArtificialIntelligence2020,kimDeepLearningBiomedical2020,pesapaneArtificialIntelligenceMedical2018}. 
+
+
+\section{Rozwi¹zania alternatywne}
+Ze wzglêdu na specyfikê tematu pracy i brak dostêpnych rozwi¹zañ realizuj¹cych w ca³oœci temat niniejszej pracy przegl¹d alternatywnych metod podzielono na dwa obszary--- segmentacja naczyñ krwionoœnych w obrazach ultrasonograficznych oraz pomiar naczynia krwionoœnego na podstawie wczeœniej uzyskanej maski. Dodatkowym argumentem przemawiaj¹cym za takim podzia³em pracy jest mo¿liwoœæ wykorzystywania obrazów segmentacyjnych do ró¿nych zastosowañ. Maski struktur czy obiektów anatomicznych s¹ wartoœciowymi danymi, pozwalaj¹cymi na dalsz¹ i g³êbsz¹ analizê w konkretnym obszarze. 
+\subsection{Segmentacja naczyñ krwionoœnych w obrazach USG}\label{wielkosc}
+Problem segmentacji danych obiektów na obrazie mo¿na podzieliæ na dwie podstawowe grupy: metody klasyczne oraz metody opieraj¹ce siê na  uczeniu maszynowym. Przyk³adem rozwi¹zañ pierwszego typu jest u¿ycie transformaty Hough'a (ang. \textit{Hough Transform}), która wykrywa regularne kszta³ty np. okrêgi (kszta³t naczyñ w widoku przekrojowym obrazu ultrasonograficznego jest najbardziej zbli¿ony do okrêgu). Opiera siê na wyznaczeniu prawdopodobieñstwa wyst¹pienia danego obiektu w ka¿dym punkcie obrazu. Takie podejœcie zaproponowali: Spyretta Golemati, John Stoitsis, Emmanouil G. Sifakis, Thomas Balkizas oraz Konstantina S. Nikita w pracy zatytu³owanej,,\textit{Using the hough transform to segment ultrasound images of longitudinal and transverse sections of the carotid artery}'' \cite{golematiUsingHoughTransform2007}. Inn¹ technikê wykorzystali autorzy pracy o tytule ,,\textit{Ultrasound Common Carotid Artery Segmentation Based on Active Shape Model}'' \cite{yangUltrasoundCommonCarotid2013}, w której to opisali wykrywanie granic œciany naczynia krwionoœnego z zastosowaniem modeli aktywnych kszta³tów (ang. \textit{Active Shape Models}). Metoda polega na statystycznym dopasowaniu kszta³tu wejœciowego do obiektu zainteresowania poprzez iteracyjne odkszta³canie. Ciekawe rozwi¹zanie przedstawili Amr R. Abdel-Dayem i Mahmoud R. El-Sakka w pracy ,,\textit{Carotid Artery Ultrasound Image Segmentation Using Fuzzy Region Growing}'' \cite{abdel-dayemCarotidArteryUltrasound2005}, gdzie na podstawie punktu startowego przeprowadzony jest algorytm wzrostu rozmytego regionu (ang. \textit{Fuzzy Region Growing}). Jego wynikiem jest rozmyta mapa po³¹czeñ, która zostaje poddana progowaniu. \\
+\indent Istnieje wiele innych klasycznych technik, pozwalaj¹cych wykryæ kontur i uzyskaæ maskê segmentowanego naczynia. 
+Mimo niezbyt skomplikowanej implementacji takich algorytmów s¹ one nierzadko pó³automatyczne, co oznacza, ¿e konieczna jest ingerencja u¿ytkownika, najczêœciej na pocz¹tkowym etapie procesu (np. poprzez wybór punktu pocz¹tkowego, nale¿¹cego do obiektu). W zwi¹zku z tym wyniki s¹ mocno zale¿ne od dok³adnoœci dzia³añ cz³owieka. Kolejn¹ wad¹ tego typu strategii jest znaczny wp³yw jakoœci obrazu (np. obecnoœæ szumu, artefaktów, kontrast), któr¹ nie zawsze da siê skorygowaæ w wystarczaj¹cym stopniu, na dzia³anie algorytmu. Upraszczaj¹c, mo¿na stwierdziæ, ¿e maj¹c do czynienia z gorszym jakoœciowo obrazem nale¿y liczyæ siê z mniej dok³adnym wynikiem.  Niektóre z tych metod s¹ kosztowne obliczeniowo i tym samym czasoch³onne. Bior¹c pod uwagê powy¿sze argumenty oraz kwestiê ci¹g³ego rozwoju i badañ nad rewolucyjnymi, w pe³ni automatycznymi i szeroko stosowanymi metodami z zakresu uczenia maszynowego, postanowiono dokonaæ przegl¹du alternatywnych dzia³añ w³aœnie w tym zakresie. \\
+\indent 
+W pracy ,,\textit{Automatic localization of Common Carotid Artery in ultrasound images using Deep Learning}'' \cite{hassaninAutomaticLocalizationCommon2021} zaproponowano podejœcie wykrywania têtnicy szyjnej CCA (ang. \textit{Common Carotid Artery}) w obrazach ultrasonograficznych z wykorzystaniem szybkiej rekurencyjnej splotowej sieci neuronowej (ang. \textit{Faster R-CNN}), aby wykryæ prostok¹tny region zainteresowania (ang. \textit{Object bounding box}), zawieraj¹cy CCA. Nastêpnie przeprowadzono kilka ró¿nych technik lokalizacyjnych (np. aktywny kontur), aby dok³adnie wyznaczyæ granicê têtnicy. Wspó³czynnik Jaccarda'a, w odniesieniu do obrazów prawdy (ang. \textit{ground truth}), wyniós³ oko³o 0,91. Na takich wynikach w ³atwy sposób mo¿na uzyskaæ maski analizowanych obiektów. 
+
+Inne podejœcie przestawia artyku³ ,,\textit{Deep learning methods for detection of carotid artery wall}'' \cite{anic2021deep}, w którym to autorzy podejmuj¹ zadanie segmentacji CCA przy pomocy sieci CNN SegNet i porównuj¹ wyniki ze zmodyfikowan¹ g³êbok¹ sieci¹ konwolucyjn¹ oparta na modelu U-Net. Zaproponowane rozwi¹zanie (CNN SegNet) osi¹gnê³o nieco lepszy wynik, plasuj¹cy siê na poziomie 0,92 wg. wskaŸnika Dice'a. 
+
+W kolejnej z pracy o tytule ,,\textit{Two-stage and dual-decoder convolutional U-Net ensembles for reliable vessel and plaque segmentation in carotid ultrasound images}'' \cite{xieTwostageDualdecoderConvolutional2020a} wykorzystano zmodyfikowany model sieci U-Net do przygotowania dwóch metod--- dwuetapowego kaskadowego po³¹czenia U-Net oraz podwójnego dekodera U-Net. Pierwsza z nich osi¹gnê³a wskaŸnik Dice'a wynosz¹cy 0,95, natomiast druga 0,91. 
+
+
+
+Publikacja pt. ,,\textit{Segmentation of common and internal carotid arteries from 3D ultrasound images based on adaptive triple loss}'' \cite{jiangSegmentationCommonInternal2021a} prezentuje metodê segmentacji CCA za pomoc¹ dwukana³owej sieci U-Net. Zastosowano podejœcie z trzykrotn¹ segmentacj¹ na podstawie wejœciowych obrazów ich odwróconych wersji. Ostateczna maska segmentacji zosta³a wygenerowana poprzez tzw. g³osowanie wiêkszoœciowe. Uzyskane przez autorów wyniki w postaci wskaŸnika Dice'a wynosz¹ 95\%.
+
+Leah A. Groves, Blake VanBerlo, Natan Veinberg, Abdulrahman Alboog, Terry M. Peters oraz Elvis C. S. Chen w swojej pracy porównuj¹ sieæ Mask R-CNN oraz U-Net oparte na algorytmach automatycznego segmentowania têtnicy szyjnej i ¿y³y szyjnej wewnêtrznej w obrazach ultrasonograficznych. Do szkolenia obydwu modeli zastosowano czterokrotn¹ walidacjê krzy¿ow¹. U-Net algorytm zawiera³ dodatkowo etap przetwarzania koñcowego, w który ostateczn¹ segmentacje stanowi³ najwiêkszy po³¹czony obszar dla ka¿dej klasy (CCA oraz IJV). Mask R-CNN jest z kolei rozbudowan¹ wersj¹ szybkiej rekurencyjnej splotowej sieci neuronowej (Faster R-CNN), jednak oprócz dostarczenia dwóch wyjœciowych danych tj. \textit{Object bounding box} oraz klasy obiektu, sieæ przekazuje równie¿ wynik segmentacji tego obiektu. Zawiera ona kilka sieci sk³adowych w tym m.in. ResNet-50. Œrednie wyniki segmentacji dla CA i IJV, na podstawie wskaŸnika Dice'a, uzyskane przez maskê R-CNN, wynios³y 0,90 i 0,88 odpowiednio. Zmodyfikowana koñcowo sieæ U-Net  0,81 ± 0,21 i 0,71 ± 0,23,
+odpowiednio dla CA i IJV
+
+aska R-CNN zapewnia³a œrednio dok³adniejsze segmentacje naczyñ w porównaniu z U-Net
+
+\subsection{Pomiar naczynia krwionoœnego}\label{wielkosc}
+
+
+Ka¿de z przytoczonych rozwi¹zañ skutkuje ró¿nymi rezultatami, a odpowiedni wybór powinien byæ dostosowany do danego problemu. 
+
+
+
+
+\section{Cel pracy}
+Celem pracy jest stworzenie automatycznego systemu maj¹cego za zadanie okreœlenie wielkoœci naczyñ krwionoœnych w obrazach ultrasonograficznych. Wymaga to realizacji nastêpuj¹cych etapów:
+\begin{itemize}
+ \item zebranie danych-- rejestracja obrazów ultrasonograficznych naczyñ krwionoœnych oraz przegl¹d otwarto-Ÿród³owych baz obrazów,
+ \item przegl¹d dostêpnych rozwi¹zañ i wybór narzêdzi,
+ \item opracowanie algorytmu segmentacji naczyñ krwionoœnych z obrazów USG,
+ \item opracowanie metody pomiaru wielkoœci naczynia krwionoœnego na podstawie segmentacji,
+ \item testowanie systemu.
+\end{itemize}
+
+
+
+\section{Uk³ad pracy}
+Czasem rozdzia³ koñczy siê omówieniem zawartoœci pracy, t³umacz¹cym co czytelnik znajdzie w kolejnych jej rozdzia³ach.
+
+Ka¿dy rozdzia³ warto jest równie¿ poprzedziæ krótkim wstêpem.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Metodologia}\label{Chapter_Metodologia}
+Dok³adne, szczegó³owe naœwietlenie problemu do rozwi¹zania, w sposób teoretyczny bez sugerowanych sposobów implementacyjnych. Ten rozdzia³ mo¿na po³¹czyæ z kolejnym, stanowi¹cym propozycjê przyjêtego rozwi¹zania. Propozycja fizycznej/programistycznej realizacji zadania, umo¿liwiaj¹ca osi¹gniêcie postawionego celu i spe³nienie za³o¿eñ projektowych. T³umaczenie proponowanego rozwi¹zania w~oparciu o~ogólny schemat blokowy.
+
+\emph{Stworzenie odpornych, automatycznych no¿yczek tn¹cych stopnia trzeciego wymaga opracowania wieloetapowej metodologii. W~pierwszej kolejnoœci rozwa¿ona zostanie odpornoœæ na korozjê cyfrow¹. W~dalszej czêœci pracy\ldots}
+
+\section{Problem 1}
+\emph{Stworzone no¿yczki powinny cechowaæ siê du¿¹ odpornoœci¹ na korozjê cyfrow¹. Mo¿na w~tym celu wykorzstaæ izolacjê od znaków wodnych (Rys.~\ref{f1}) na poziomie warstwy p³ótna.}
+
+\begin{figure}[H]
+ \subfloat[Podpis 1\label{f1:c1}]{\includegraphics[width=0.45\textwidth]{logoPS}} \; % <--- to daje odstêp w poziomie; \\ daje now¹ linijkê
+ \subfloat[Podpis 2\label{f1:c2}]{\includegraphics[width=0.45\textwidth]{logoRIB}} 
+  \caption{Podpis ca³oœci nawi¹zuj¹cy do podpisu \protect\subref{f1:c1}.\label{f1}} % wykorzystanie subref mo¿e wymagaæ dodania \protect !!!
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Czêœæ konstrukcyjna/Specyfikacja wewnêtrzna}
+Czêœæ konstrukcyjna lub implementacyjna, t³umacz¹ca sposób realizacji zadania, omówion¹ w poprzedniej czêœci opracowania. Wyjaœnienie wyborów elementów, sprzêtu lub programów. W przypadku programów obiektowych podzia³ na klasy, pola, metody wraz z uzasadnieniem.
+
+\emph{W trakcie realizacji zadania, w~pierwszym kroku, nale¿y odizolowaæ znaki wodne w~warstwie p³ótna. Wykorzystano w~tym celu dostêpn¹ w~œrodowisku XYZ funkcje Z. Parametry do funkcji okreœlono poprez\ldots}
+
+\section{Specyfikacja interfejsu programistycznego}
+
+Jeœli projekt, praca dotyczy systemu informatycznego, w dokumentacji umieszcza siê z~regu³y jedynie interfejs programistyczny (b¹dŸ jego fragmenty). Pe³ny kod mo¿na do³¹czyæ w za³¹czniku.
+
+%\lstset{ %
+%numbers=left, 
+%}
+
+\begin{lstlisting}
+private double losuj(int ile, double min, double max);
+\end{lstlisting}
+
+Metoda losuje liczbê z~podanego zakresu. Przed zwróceniem wartoœci, losowanie
+powtarzane jest wybran¹ liczbê razy w~celu zwiêkszenia czasu obliczeñ.
+
+\begin{itemize}
+ \item Parametry:
+    \begin{description}
+    \item[ile] okreœla ile rezy nale¿y losowaæ przed zwróceniem liczby,
+    \item[min] definiuje wartoœæ minimaln¹,
+    \item[max] definiuje wartoœæ minimaln¹,
+    \end{description}
+ \item Wartoœæ zwracana: wylosowana liczba
+ \item B³êdy: w~przypadku, gdy \lstinline{ile} $< 0$, zg³aszany jest wyj¹tek \lstinline{WrongIleException}
+\end{itemize}
+
+
+itd. 
+
+czasami warto omówiæ wybrane fragmenty razem z~implementacj¹
+
+\begin{lstlisting}[numbers=right, numbersep=-5pt]%, stepnumber=2]
+...
+double x = 2 ^ 1023-3 / 22;
+int z = (int)x; 
+p = x - z;
+...
+\end{lstlisting}
+
+\emph{w pierwszej kolejnoœci stosowana jest sta³a Krafta do redukcji z³o¿onoœci ciêcia (linijka~2).}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Instrukcja obs³ugi/Specyfikacja zewnêtrzna}
+Instrukcja obs³ugi zbudowanego urz¹dzenia/programu komputerowego. Dok³adne wyjaœnienie zasad pos³ugiwania siê tym, co zosta³o otrzymane w efekcie przeprowadzonych prac. Mo¿na wykorzystaæ zrzuty ekranów, scenariusze u¿ytkowe itp.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Rezultaty}
+Zobrazowanie i omówienie wyników otrzymywanych wskutek zastosowania danego urz¹dzenia b¹dŸ aplikacji. Badanie ewentualnych parametrów (takich jak dok³adnoœæ, czu³oœæ...), czy te¿ zachowania w szczególnych sytuacjach. O ile to mo¿liwe tabelaryzacja rezultatów oraz ich statystyczna interpretacja. Ocena zachowania zaproponowanego rozwi¹zania. Analiza mo¿liwych przyczyn wyst¹pienia b³êdów. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Podsumowanie}
+Nawi¹zanie do celu pracy oraz postawionych za³o¿eñ. Próba oceny realizacji celu, poprzez weryfikacjê otrzymanych rezultatów. Analiza dostrze¿onych problemów, b³êdnego, nieoczekiwanego dzia³ania, ewentualnych problemów napotkanych podczas realizacji. W przypadku niewyczerpania tematu, a tak¿e wspomnianego niepo¿¹danego zachowania urz¹dzenia/aplikacji sugestie ich eliminacji wymienione jako plany na przysz³oœæ.\footnote{Krótkie! 1-2 strony.}
+
+Wstêp wraz z podsumowaniem winny stanowiæ swego rodzaju klamrê, a nawet ca³oœæ w takim rozumieniu, ¿e przeczytanie wy³¹cznie tych dwóch rozdzia³ów t³umaczyæ powinno rozwa¿any problem wraz z efektami otrzymanymi w efekcie prac, stanowi¹cymi jego rozwi¹zanie, bez wnikania w sposób ich otrzymania (to zawiera czêœæ œrodkowa).

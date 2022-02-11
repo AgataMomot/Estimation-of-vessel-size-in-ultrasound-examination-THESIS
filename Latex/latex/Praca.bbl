@@ -1,0 +1,220 @@
+\begin{thebibliography}{10}
+
+\bibitem{SPARQNewWay}
+{{SPARQ New Way}} of {{Thinking1}}. 2 {{OCZEKIWANIA Intencive}} care/{{RA
+  Mobilno\'s\'c}} aparatu {{USG \L atwo\'s\'c}} i intuicyjno\'s\'c u\.zycia
+  aparatu {{USG Pewno\'s\'c}} diagnostyczna. - ppt pobierz.
+\newblock \url{https://slideplayer.pl/slide/811173/}.
+\newblock [data dost\k{e}pu: 2021-11-28].
+
+\bibitem{abdel-dayemCarotidArteryUltrasound2005}
+{\sc {Abdel-Dayem}, A.~R., and {El-Sakka}, M.~R.}
+\newblock Carotid {{Artery Ultrasound Image Segmentation Using Fuzzy Region
+  Growing}}.
+\newblock In {\em Image {{Analysis}} and {{Recognition}}}, D.~Hutchison,
+  T.~Kanade, J.~Kittler, J.~M. Kleinberg, F.~Mattern, J.~C. Mitchell, M.~Naor,
+  O.~Nierstrasz, C.~Pandu~Rangan, B.~Steffen, M.~Sudan, D.~Terzopoulos,
+  D.~Tygar, M.~Y. Vardi, G.~Weikum, M.~Kamel, and A.~Campilho, Eds., vol.~3656.
+  {Springer Berlin Heidelberg}, {Berlin, Heidelberg}, 2005, pp.~869--878.
+
+\bibitem{ali2008signal}
+{\sc Ali, M., Magee, D., and Dasgupta, U.}
+\newblock Signal processing overview of ultrasound systems for medical imaging.
+\newblock {\em SPRAB12, Texas Instruments, Texas\/} (2008).
+
+\bibitem{amishaOverviewArtificialIntelligence2019}
+{\sc {Amisha}, Malik, P., Pathania, M., and Rathaur, V.}
+\newblock Overview of artificial intelligence in medicine.
+\newblock {\em Journal of Family Medicine and Primary Care 8}, 7 (2019), 2328.
+
+\bibitem{cardinalIntravascularUltrasoundImage2006a}
+{\sc Cardinal, M.-H., Meunier, J., Soulez, G., Maurice, R., Therasse, E., and
+  Cloutier, G.}
+\newblock Intravascular ultrasound image segmentation: A three-dimensional
+  fast-marching method based on gray level distributions.
+\newblock {\em IEEE Transactions on Medical Imaging 25}, 5 (May 2006),
+  590--601.
+
+\bibitem{cheUltrasoundRegistrationReview2017a}
+{\sc Che, C., Mathai, T.~S., and Galeotti, J.}
+\newblock Ultrasound registration: A review.
+\newblock {\em Methods 115\/} (Feb. 2017), 128--143.
+
+\bibitem{chenMachineLearningPrediction2017}
+{\sc Chen, J.~H., and Asch, S.~M.}
+\newblock Machine {{Learning}} and {{Prediction}} in {{Medicine}} \textemdash{}
+  {{Beyond}} the {{Peak}} of {{Inflated Expectations}}.
+\newblock {\em New England Journal of Medicine 376}, 26 (June 2017),
+  2507--2509.
+
+\bibitem{chengCarotidPlaqueSegmentation2018a}
+{\sc Cheng, J., Chen, Y., Yu, Y., and Chiu, B.}
+\newblock Carotid plaque segmentation from three-dimensional ultrasound images
+  by direct three-dimensional sparse field level-set optimization.
+\newblock {\em Computers in Biology and Medicine 94\/} (Mar. 2018), 27--40.
+
+\bibitem{doughertyDigitalImageProcessing2020}
+{\sc Dougherty, E.~R.}
+\newblock {\em Digital {{Image Processing Methods}}}.
+\newblock {CRC Press}, Aug. 2020.
+
+\bibitem{el-gamalCurrentTrendsMedical2016}
+{\sc {El-Gamal}, F. E.-Z.~A., Elmogy, M., and Atwan, A.}
+\newblock Current trends in medical image registration and fusion.
+\newblock {\em Egyptian Informatics Journal 17}, 1 (Mar. 2016), 99--124.
+
+\bibitem{golematiUsingHoughTransform2007}
+{\sc Golemati, S., Stoitsis, J., Sifakis, E.~G., Balkizas, T., and Nikita,
+  K.~S.}
+\newblock Using the {{Hough Transform}} to {{Segment Ultrasound Images}} of
+  {{Longitudinal}} and {{Transverse Sections}} of the {{Carotid Artery}}.
+\newblock {\em Ultrasound in Medicine \& Biology 33}, 12 (Dec. 2007),
+  1918--1932.
+
+\bibitem{grovesAutomaticSegmentationCarotid2020b}
+{\sc Groves, L.~A., VanBerlo, B., Veinberg, N., Alboog, A., Peters, T.~M., and
+  Chen, E. C.~S.}
+\newblock Automatic segmentation of the carotid artery and internal jugular
+  vein from {{2D}} ultrasound images for {{3D}} vascular reconstruction.
+\newblock {\em International Journal of Computer Assisted Radiology and Surgery
+  15}, 11 (Nov. 2020), 1835--1846.
+
+\bibitem{hassanRobustSpatialFuzzy2019a}
+{\sc Hassan, M., Murtza, I., Hira, A., Ali, S., and Kifayat, K.}
+\newblock Robust spatial fuzzy {{GMM}} based {{MRI}} segmentation and carotid
+  artery plaque detection in ultrasound images.
+\newblock {\em Computer Methods and Programs in Biomedicine 175\/} (July 2019),
+  179--192.
+
+\bibitem{hassaninAutomaticLocalizationCommon2021}
+{\sc Hassanin, D., Abdellah, m., Khalaf, A., and Gharrieb, R.~R.}
+\newblock Automatic localization of {{Common Carotid Artery}} in ultrasound
+  images using {{Deep Learning}}.
+\newblock {\em Journal of Advanced Engineering Trends 40}, 2 (July 2021),
+  127--135.
+
+\bibitem{jiangSegmentationCommonInternal2021a}
+{\sc Jiang, M., Zhao, Y., and Chiu, B.}
+\newblock Segmentation of common and internal carotid arteries from {{3D}}
+  ultrasound images based on adaptive triple loss.
+\newblock {\em Medical Physics 48}, 9 (Sept. 2021), 5096--5114.
+
+\bibitem{kimDeepLearningBiomedical2020}
+{\sc Kim, M., Yan, C., Yang, D., Wang, Q., Ma, J., and Wu, G.}
+\newblock Deep learning in biomedical image analysis.
+\newblock In {\em Biomedical {{Information Technology}}}. {Elsevier}, 2020,
+  pp.~239--263.
+
+\bibitem{maeckenUltrasoundImagingVascular2007}
+{\sc Maecken, T., and Grau, T.}
+\newblock Ultrasound imaging in vascular access:.
+\newblock {\em Critical Care Medicine 35}, Suppl (May 2007), S178--S185.
+
+\bibitem{mildenbergerIntroductionDICOMStandard2002}
+{\sc Mildenberger, P., Eichelberg, M., and Martin, E.}
+\newblock Introduction to the {{DICOM}} standard.
+\newblock {\em European Radiology 12}, 4 (Apr. 2002), 920--927.
+
+\bibitem{anic2021deep}
+{\sc Milos~Anic, Branko~Arsic, S. D. N.~F.}
+\newblock Deep learning methods for detection of carotid artery wall.
+\newblock {\em Ri-STEM-2021\/} (2021), 135.
+
+\bibitem{mustraOverviewDICOMStandard2008}
+{\sc Mustra, M., Delac, K., and Grgic, M.}
+\newblock Overview of the {{DICOM Standard}}.
+\newblock {\em th International Symposium ELMAR\/} (2008), 6.
+
+\bibitem{norrisUltrasoundSufficientVascular2004}
+{\sc Norris, J.~W., and Halliday, A.}
+\newblock Is {{Ultrasound Sufficient}} for {{Vascular Imaging Prior}} to
+  {{Carotid Endarterectomy}}?
+\newblock {\em Stroke 35}, 2 (Feb. 2004), 370--371.
+
+\bibitem{pesapaneArtificialIntelligenceMedical2018}
+{\sc Pesapane, F., Codari, M., and Sardanelli, F.}
+\newblock Artificial intelligence in medical imaging: Threat or opportunity?
+  {{Radiologists}} again at the forefront of innovation in medicine.
+\newblock {\em European Radiology Experimental 2}, 1 (Dec. 2018), 35.
+
+\bibitem{phillipsAdvancesHealthTechnology2019}
+{\sc Phillips, S.~A., Ali, M., Modrich, C., Oke, S., Elokda, A., Laddu, D., and
+  Bond, S.}
+\newblock Advances in {{Health Technology Use}} and {{Implementation}} in the
+  {{Era}} of {{Healthy Living}}: Implications for {{Precision Medicine}}.
+\newblock {\em Progress in Cardiovascular Diseases 62}, 1 (Jan. 2019), 44--49.
+
+\bibitem{mastersthesis}
+{\sc Roszkowski, M.}
+\newblock System do pomiaru odpowiedzi czestotliwosciowej piezoelektrykow z
+  procesorem wbudowanym w uklad programowalny.
+\newblock Master's thesis, Politechnika Warszawska, Warszawa, 2015.
+
+\bibitem{sakasTrendsMedicalImaging2002}
+{\sc Sakas, G.}
+\newblock Trends in medical imaging: From {{2D}} to {{3D}}.
+\newblock {\em Computers \& Graphics 26}, 4 (Aug. 2002), 577--587.
+
+\bibitem{scouttCarotidUltrasound2019a}
+{\sc Scoutt, L.~M., and Gunabushanam, G.}
+\newblock Carotid {{Ultrasound}}.
+\newblock {\em Radiologic Clinics of North America 57}, 3 (May 2019), 501--518.
+
+\bibitem{shenArtificialIntelligenceUltrasound2021a}
+{\sc Shen, Y.-T., Chen, L., Yue, W.-W., and Xu, H.-X.}
+\newblock Artificial intelligence in ultrasound.
+\newblock {\em European Journal of Radiology 139\/} (June 2021), 109717.
+
+\bibitem{smistadRealTimeAutomaticArtery2016a}
+{\sc Smistad, E., and Lindseth, F.}
+\newblock Real-{{Time Automatic Artery Segmentation}}, {{Reconstruction}} and
+  {{Registration}} for {{Ultrasound}}-{{Guided Regional Anaesthesia}} of the
+  {{Femoral Nerve}}.
+\newblock {\em IEEE Transactions on Medical Imaging 35}, 3 (Mar. 2016),
+  752--761.
+
+\bibitem{spacekUseUltrasoundGuidance2018a}
+{\sc {\v S}pa{\v c}ek, R., Jiravsk{\'y}, O., Neuwirth, R., Holek, B., {\v
+  S}k{\v n}ou{\v r}il, L., He{\v c}ko, J., and Branny, M.}
+\newblock Use of ultrasound guidance in vascular cannulation and effusion
+  punctures at the cardiology department.
+\newblock {\em Cor et Vasa 60}, 3 (June 2018), e306--e313.
+
+\bibitem{tangRoleArtificialIntelligence2020}
+{\sc Tang, X.}
+\newblock The role of artificial intelligence in medical imaging research.
+\newblock {\em BJR|Open 2}, 1 (Nov. 2020), 20190031.
+
+\bibitem{troianosGuidelinesPerformingUltrasound2011a}
+{\sc Troianos, C.~A., Hartman, G.~S., Glas, K.~E., Skubas, N.~J., Eberhardt,
+  R.~T., Walker, J.~D., and Reeves, S.~T.}
+\newblock Guidelines for {{Performing Ultrasound Guided Vascular Cannulation}}:
+  Recommendations of the {{American Society}} of {{Echocardiography}} and the
+  {{Society}} of {{Cardiovascular Anesthesiologists}}.
+\newblock {\em Journal of the American Society of Echocardiography 24}, 12
+  (Dec. 2011), 1291--1318.
+
+\bibitem{worldhealthorganizationIMAIDistrictClinician2012}
+{\sc {World Health Organization}}.
+\newblock {\em {{IMAI}} District Clinician Manual: Hospital Care Adolescents
+  and Adults : Guidelines for the Management of Illnessess with
+  Limited-Resources}.
+\newblock {World Health Organization}, {Geneva}, 2012.
+
+\bibitem{xieTwostageDualdecoderConvolutional2020a}
+{\sc Xie, M., Li, Y., Xue, Y., Huntress, L., Beckerman, W., Rahimi, S.~A., Ady,
+  J.~W., and Roshan, U.~W.}
+\newblock Two-stage and dual-decoder convolutional {{U-Net}} ensembles for
+  reliable vessel and plaque segmentation in carotid ultrasound images.
+\newblock In {\em 2020 19th {{IEEE International Conference}} on {{Machine
+  Learning}} and {{Applications}} ({{ICMLA}})\/} ({Miami, FL, USA}, Dec. 2020),
+  {IEEE}, pp.~1376--1381.
+
+\bibitem{yangUltrasoundCommonCarotid2013}
+{\sc Yang, X., Jin, J., Xu, M., Wu, H., He, W., Yuchi, M., and Ding, M.}
+\newblock Ultrasound {{Common Carotid Artery Segmentation Based}} on {{Active
+  Shape Model}}.
+\newblock {\em Computational and Mathematical Methods in Medicine 2013\/}
+  (2013), 1--11.
+
+\end{thebibliography}
