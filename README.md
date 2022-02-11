@@ -18,7 +18,7 @@ Workplan:
 
 
 Current progress in the folders below (11.02.2022):
-1. Literature folder- contains articles (.pdf), wchich are cited in the thesis. Addictionally there is one pdf file with these sources report.
+1. Literature folder- contains one .pdf file with sources report (cited in the thesis).
 2. Dataset folder- contains contains ultrasound images of carotid artery- open-source dataset and self-collected images on the ultrasound machine (Mindray UMT-500Plus). 
 3. Latex folder- contains Latex files needed to get .pdf file with thesis. There is now theoretical introdution with cited sources. 
 
