@@ -22,7 +22,7 @@ Current progress in the folders below (11.02.2022):
 2. Dataset folder- contains URLs to ultrasound images of carotid artery:
       - open-source datasets,
       - self-collected dataset on the ultrasound machine (Mindray UMT-500Plus).
-4. Latex folder- contains Latex files needed to get .pdf file with thesis. There is now theoretical introdution with cited sources. 
+4. Latex folder- contains Latex files needed to get .pdf file with thesis. It currently includes the first part- the introduction with cited sources. 
 
 
 
